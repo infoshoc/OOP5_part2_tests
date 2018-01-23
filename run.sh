@@ -45,7 +45,9 @@ should_pass $LINENO;
 should_pass $LINENO;
 g++ -std=c++11 compile_basic_ds_test.cpp -o compile_basic_ds_test &> /dev/null
 should_pass $LINENO;
-#g++ -std=c++11 testMove.cpp -o testMove &> /dev/null
-#should_pass $LINENO;
-#./testMove.cpp
-#should_pass $LINENO;
+g++ -std=c++11 testMove.cpp -o testMove &> /dev/null
+should_pass $LINENO;
+./testMove
+should_pass $LINENO;
+g++ -std=c++11 testMoveFail.cpp -o testMoveFail &> /dev/null
+should_fail $LINENO;
