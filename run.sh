@@ -15,7 +15,7 @@ should_pass() {
 		exit 1;
 	fi
 }
-g++ -std=c++11 listTest.cpp -o listTest
+g++ -std=c++11 listTest.cpp -o listTest &> /dev/null
 should_pass $LINENO
 ./listTest
 should_pass $LINENO
@@ -45,3 +45,7 @@ should_pass $LINENO;
 should_pass $LINENO;
 g++ -std=c++11 compile_basic_ds_test.cpp -o compile_basic_ds_test &> /dev/null
 should_pass $LINENO;
+#g++ -std=c++11 testMove.cpp -o testMove &> /dev/null
+#should_pass $LINENO;
+#./testMove.cpp
+#should_pass $LINENO;
