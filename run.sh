@@ -43,3 +43,5 @@ g++ -std=c++11 utilitiesTest.cpp -o utilitiesTest &> /dev/null
 should_pass $LINENO;
 ./utilitiesTest
 should_pass $LINENO;
+g++ -std=c++11 compile_basic_ds_test.cpp -o compile_basic_ds_test &> /dev/null
+should_pass $LINENO;
